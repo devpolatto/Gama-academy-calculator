@@ -10,44 +10,46 @@
 <body>
      <div class="calculator">
           <div class="calculator-display">
-               R$10,00
+               <div id="operation-result"></div>
           </div>
 
           <div class="calculator-keys">
                <div class="clear-btn-group grid-clear-btn">
-                    <button class="btn-clear">CE</button>
-                    <button class="btn-clear">C</button>
+                    <button id="key-ce" class="btn-clear">CE</button>
+                    <button id="key-c" class="btn-clear">C</button>
                </div>
                <div class="operations-btn-group grid-operators">
-                    <button class="btn-operator">+</button>
-                    <button class="btn-operator">-</button>
-                    <button class="btn-operator">/</button>
-                    <button class="btn-operator">*</button>
+                    <button id="key-operator-sum" class="btn-operator">+</button>
+                    <button id="key-operator-subtract" class="btn-operator">-</button>
+                    <button id="key-operator-divider" class="btn-operator">/</button>
+                    <button id="key-operator-multiply" class="btn-operator">*</button>
                </div>
                <div class="numbers-group list-1 grid-numbers-1">
-                    <button class="btn-number">7</button>
-                    <button class="btn-number">8</button>
-                    <button class="btn-number">9</button>
+                    <button id="key-number" class="btn-number">7</button>
+                    <button id="key-number" class="btn-number">8</button>
+                    <button id="key-number" class="btn-number">9</button>
                </div>
                <div class="numbers-group list-2 grid-numbers-2">
-                    <button class="btn-number">4</button>
-                    <button class="btn-number">5</button>
-                    <button class="btn-number">6</button>
+                    <button id="key-number" class="btn-number">4</button>
+                    <button id="key-number" class="btn-number">5</button>
+                    <button id="key-number" class="btn-number">6</button>
                </div>
                <div class="numbers-group list-3 grid-numbers-3">
-                    <button class="btn-number">1</button>
-                    <button class="btn-number">2</button>
-                    <button class="btn-number">3</button>
+                    <button id="key-number" class="btn-number">1</button>
+                    <button id="key-number" class="btn-number">2</button>
+                    <button id="key-number" class="btn-number">3</button>
                </div>
                <div class="numbers-group list-4 grid-numbers-4">
-                    <button class="btn-number">0</button>
-                    <button class="btn-number">,</button>
-                    <button class="btn-number">.</button>
+                    <button id="key-number" class="btn-number">0</button>
+                    <button id="" class="btn-number">,</button>
+                    <button id="" class="btn-number">.</button>
                </div>
                <div class="equal-btn grid-equal-btn">
-                    <button class="equal-btn">=</button>
+                    <button id="key-equal" class="equal-btn">=</button>
                </div>
           </div>
      </div>
+
+     <script src="script.js"></script>
 </body>
 </html>
