@@ -29,8 +29,10 @@ btnClearOne.addEventListener('click', () => {
 })
 
 function cacl() {
-     if(display.innerHTML) {
-          display.innerHTML = eval(display.innerHTML)
+     let numbers = display.innerHTML
+
+     if(numbers){
+          display.innerHTML = eval(numbers.replace(/,/gi, "."))
      }
 }
 
