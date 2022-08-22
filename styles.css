@@ -48,7 +48,7 @@ button {
      grid-template-areas: 
           "clear-btn clear-btn clear-btn clear-btn"
           "grid-operators grid-operators grid-operators grid-operators"
-          "number-list-1 number-list-1 number-list-1 grid-equal-btn"
+          "number-list-1 number-list-1 number-list-1 grid-convert-signal"
           "number-list-2 number-list-2 number-list-2 grid-equal-btn"
           "number-list-3 number-list-3 number-list-3 grid-equal-btn"
           "number-list-4 number-list-4 number-list-4 grid-equal-btn"
@@ -81,6 +81,10 @@ button {
 
 .calculator .calculator-keys .grid-numbers-4{
      grid-area: number-list-4;
+}
+
+.calculator .calculator-keys .grid-convert-signal{
+     grid-area: grid-convert-signal
 }
 
 /* Number Buttons Operators */
@@ -130,6 +134,19 @@ button {
      transition-duration: 0.4s;
 }
 
+.calculator .calculator-keys .grid-convert-signal{
+     width: 100%;
+     height: 100%;
+}
+
+.calculator .calculator-keys .grid-convert-signal .btn-convert-signal{
+     width: 100%;
+     height: 100%;
+
+     font-size: 24px;
+
+     background-color: #CD4813;
+}
 
 /* Number Buttons */
 .calculator .calculator-keys .numbers-group{
