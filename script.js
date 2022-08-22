@@ -5,6 +5,7 @@ const btnClear = document.getElementById('key-c')
 const btnClearOne = document.getElementById('key-ce')
 const btnOperator = document.querySelectorAll('[id*=key-operator]')
 const btnEqual = document.getElementById('key-equal')
+const btnDecimal = document.querySelectorAll('[id*=key-signal-decimal]')
 
 //atualiza o display com o valor capturado do click
 const updateDisplay = (text) => {
@@ -16,6 +17,7 @@ const getClick = (event) => updateDisplay(event.target.textContent);
 //adiciona um evento de click para toda tecla de numero e operador
 numbers.forEach (number => number.addEventListener('click', getClick));
 btnOperator.forEach(operator => operator.addEventListener('click', getClick))
+btnDecimal.forEach(decimal => decimal.addEventListener('click', getClick))
 
 // limpa o display
 btnClear.addEventListener('click', () => display.innerHTML = "")
